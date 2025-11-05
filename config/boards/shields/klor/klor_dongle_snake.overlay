@@ -19,6 +19,7 @@
         spi = <&spi1 0>;
         pin = <15>;
         label = "LED Strip Snake";
-        chain-length = <5>; // change this to your LED count
+        //chain-length = <5>; 
+// change this to your LED count
     };
 };
