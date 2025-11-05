@@ -1,20 +1,22 @@
-if SHIELD_KLOR_LEFT
+# Copyright (c) 2022 The ZMK Contributors
+# SPDX-License-Identifier: MIT
 
-    config ZMK_KEYBOARD_NAME
-        default "KLOR"
+config ZMK_SPLIT
+    default y
 
-    config ZMK_SPLIT_BLE_ROLE_CENTRAL
-        default y
-
-endif # LEFT
-
-
+config ZMK_BLE
+    default y
 
 if SHIELD_KLOR_LEFT || SHIELD_KLOR_RIGHT  ||  SHIELD_TOTEM_DONGLE_SNAKE
 
-    config ZMK_SPLIT
-        default y
+config ZMK_KEYBOARD_NAME
+    default "KLOR"
 
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+config ZMK_USB
+    default y
 
 if ZMK_DISPLAY
 
@@ -24,8 +26,13 @@ if ZMK_DISPLAY
     config SSD1306
         default y
 
+
 endif # ZMK_DISPLAY
 
+# Set this to the number of peripherals your dongle will have.
+# For a unibody, this would be 1. If you have left and right halves, set it to 2, etc.
+config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+    default 2
 
 
 if LVGL
@@ -47,3 +54,10 @@ endif # LVGL
 
 
 endif # LEFT RIGHT
+
+if SHIELD_KLOR_LEFT || SHIELD_KLOR_RIGHT
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default n
+
+endif
