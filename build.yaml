@@ -19,9 +19,7 @@ include:
     shield: klor_left
   - board: nice_nano_v2
     shield: klor_right
-  - board: nice_nano_v2
-    shield: klor_dongle
-    
+
 # wireless with dongle
 #  - board: nice_nano_v2
 #    shield: klor_left
