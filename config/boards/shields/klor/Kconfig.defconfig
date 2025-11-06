@@ -10,11 +10,13 @@ endif # LEFT
 
 
 
-if SHIELD_KLOR_LEFT || SHIELD_KLOR_RIGHT
+if SHIELD_KLOR_LEFT || SHIELD_KLOR_RIGHT || SHIELD_KLOR_DONGLE
 
-    config ZMK_SPLIT
-        default y
+config ZMK_SPLIT
+    default y
 
+config ZMK_BLE
+    default y
 
 if ZMK_DISPLAY
 
