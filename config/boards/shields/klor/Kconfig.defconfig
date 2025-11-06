@@ -1,25 +1,19 @@
+if SHIELD_KLOR_LEFT
 
-if SHIELD_TOTEM_DONGLE
+    config ZMK_KEYBOARD_NAME
+        default "KLOR"
 
-config ZMK_KEYBOARD_NAME
-    default "KLOR"
-    
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
+    config ZMK_SPLIT_BLE_ROLE_CENTRAL
+        default y
 
-config ZMK_USB
-    default y
-
-endif
+endif # LEFT
 
 
-if SHIELD_KLOR_LEFT || SHIELD_KLOR_RIGHT || SHIELD_KLOR_DONGLE
+if SHIELD_KLOR_LEFT || SHIELD_KLOR_RIGHT
 
-config ZMK_SPLIT
-    default y
+    config ZMK_SPLIT
+        default y
 
-config ZMK_BLE
-    default y
 
 if ZMK_DISPLAY
 
@@ -30,6 +24,7 @@ if ZMK_DISPLAY
         default y
 
 endif # ZMK_DISPLAY
+
 
 
 
