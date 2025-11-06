@@ -1,13 +1,16 @@
-if SHIELD_KLOR_LEFT
 
-    config ZMK_KEYBOARD_NAME
-        default "KLOR"
+if SHIELD_TOTEM_DONGLE
 
-    config ZMK_SPLIT_BLE_ROLE_CENTRAL
-        default y
+config ZMK_KEYBOARD_NAME
+    default "KLOR"
+    
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
 
-endif # LEFT
+config ZMK_USB
+    default y
 
+endif
 
 
 if SHIELD_KLOR_LEFT || SHIELD_KLOR_RIGHT || SHIELD_KLOR_DONGLE
