@@ -2,40 +2,10 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: urob
-      url-base: https://github.com/urob
-    - name: carrefinho
-      url-base: https://github.com/bukharovsi
-    - name: janpfischer
-      url-base: https://github.com/janpfischer
-    - name: karuetech                          # <--- add these
-      url-base: https://github.com/karuetech   # <---
-    - name: englmaxi
-      url-base: https://github.com/englmaxi
-    - name: gpeye
-      url-base: https://github.com/GPeye
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk-helpers
-      remote: urob
-      revision: main
-    - name: prospector-zmk-module
-      remote: carrefinho
-      revision: main
-    - name: zmk-dongle-screen
-      remote: janpfischer
-      revision: main
-    - name: snake-module                          # <--- and these
-      remote: karuetech                        # <---
-      revision: master                            # <---
-    - name: zmk-dongle-display
-      remote: englmaxi
-      revision: main
-    - name: mario-peripheral-animation
-      remote: gpeye
-      revision: main 
   self:
     path: config
