@@ -187,7 +187,7 @@
         &kp NUMBER_5  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4                         &trans  &trans  &trans  &trans  &trans
 &trans  &kp NUMBER_6  &kp Q         &kp W         &kp E           &kp R                                &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LCTRL     &kp A         &kp S         &kp D           &kp F         &kp ESCAPE  &to 0      &trans  &trans  &trans  &trans  &trans  &trans
-                                    &kp Z         &kp LEFT_SHIFT  &kp SPACE     &hm TAB G   &kp COMMA  &trans  &trans  &trans
+                                    &kp Z         &kp LEFT_SHIFT  &kp SPACE     &hm TAB G   &kp COMMA  &kp X   &trans  &trans
             >;
 
             label = "Gaming";
